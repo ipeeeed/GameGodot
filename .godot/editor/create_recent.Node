@@ -1,0 +1,14 @@
+AnimationPlayer
+ColorRect
+CanvasLayer
+Button
+VBoxContainer
+Label
+Control
+AnimatedSprite2D
+TileMap
+Camera2D
+Node2D
+Timer
+CollisionShape2D
+Area2D

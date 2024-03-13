@@ -1,0 +1,163 @@
+[gd_scene load_steps=4 format=3 uid="uid://35y7la5xm1nt"]
+
+[ext_resource type="Script" path="res://Calculadora.gd" id="1_4uaxs"]
+
+[sub_resource type="GDScript" id="GDScript_4g0ny"]
+script/source = "extends Node2D
+
+@export var num1: int = 2
+@export var num2: int = 1
+
+func _process(delta):
+	pass
+	
+func _physics_process(delta):
+	pass
+	
+func _input(event):
+	pass
+	
+func _unhandled_input(event):
+	print(event)
+"
+
+[sub_resource type="LabelSettings" id="LabelSettings_0ud4q"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D"]
+script = SubResource("GDScript_4g0ny")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+script = ExtResource("1_4uaxs")
+
+[node name="Background" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_right = 200.0
+offset_bottom = 600.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Display" type="ColorRect" parent="Control/Background"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -156.0
+offset_top = 35.0
+offset_right = 157.0
+offset_bottom = 110.0
+grow_horizontal = 2
+
+[node name="Text" type="Label" parent="Control/Background/Display"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -25.0
+offset_right = 140.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "0"
+label_settings = SubResource("LabelSettings_0ud4q")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Control/Background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -150.0
+offset_right = 150.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 4
+
+[node name="Button" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button2" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button3" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button4" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button5" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button6" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button7" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button8" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button9" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button10" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button11" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"
+
+[node name="Button12" type="Button" parent="Control/Background/GridContainer" groups=["button"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "-"

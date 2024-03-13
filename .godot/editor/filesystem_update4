@@ -1,0 +1,5 @@
+res://Scenes/level1.tscn
+res://Scenes/menu.tscn
+res://Scripts/menu.gd
+res://Scenes/transition_screen.tscn
+res://Scripts/transition_screen.gd
